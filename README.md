@@ -85,7 +85,7 @@ To install, execute the following commands:
 
 ```shell
 sudo pacman -S --needed git base-devel
-git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
+git clone --depth 1 https://github.com/M4rshe1/hyde-themes ~/HyDE
 cd ~/HyDE/Scripts
 ./install.sh
 ```
@@ -108,7 +108,7 @@ View installation instructions for HyDE in [Hyde-cli - Usage](https://github.com
 -->
 
 Please reboot after the install script completes and takes you to the SDDM login screen (or black screen) for the first time.
-For more details, please refer to the [installation wiki](https://github.com/HyDE-Project/HyDE/wiki/installation).
+For more details, please refer to the [installation wiki](https://github.com/M4rshe1/hyde-themes/wiki/installation).
 
 <div align="right">
   <br>
@@ -183,7 +183,7 @@ HyDEVM is a script that allows you to run HyDE in a virtual machine for testing 
 
 ```bash
 # Download and run (will auto-detect missing packages)
-curl -L https://raw.githubusercontent.com/HyDE-Project/HyDE/main/Scripts/hydevm/hydevm.sh -o hydevm
+curl -L https://raw.githubusercontent.com/M4rshe1/hyde-themes/main/Scripts/hydevm/hydevm.sh -o hydevm
 chmod +x hydevm
 ./hydevm
 ```
@@ -192,7 +192,7 @@ chmod +x hydevm
 
 ```bash
 # Using flakes from HyDE repository
-nix run github:HyDE-Project/HyDE
+nix run github:M4rshe1/hyde-themes
 
 # Or if you have the repository cloned locally
 nix run .
@@ -211,23 +211,23 @@ For more details, please refer to the [HyDEVM README](Scripts/hydevm/README.md).
 ---
 
 All our official themes are stored in a separate repository, allowing users to install them using themepatcher.
-For more information, visit [HyDE-Project/hyde-themes](https://github.com/HyDE-Project/hyde-themes).
+For more information, visit [M4rshe1/hyde-themes-themes](https://github.com/M4rshe1/hyde-themes-themes).
 
 <div align="center">
   <table><tr><td>
 
-[![Catppuccin-Latte](https://placehold.co/130x30/dd7878/eff1f5?text=Catppuccin-Latte&font=Oswald)](https://github.com/HyDE-Project/hyde-themes/tree/Catppuccin-Latte)
-[![Catppuccin-Mocha](https://placehold.co/130x30/b4befe/11111b?text=Catppuccin-Mocha&font=Oswald)](https://github.com/HyDE-Project/hyde-themes/tree/Catppuccin-Mocha)
-[![Decay-Green](https://placehold.co/130x30/90ceaa/151720?text=Decay-Green&font=Oswald)](https://github.com/HyDE-Project/hyde-themes/tree/Decay-Green)
-[![Edge-Runner](https://placehold.co/130x30/fada16/000000?text=Edge-Runner&font=Oswald)](https://github.com/HyDE-Project/hyde-themes/tree/Edge-Runner)
-[![Frosted-Glass](https://placehold.co/130x30/7ed6ff/1e4c84?text=Frosted-Glass&font=Oswald)](https://github.com/HyDE-Project/hyde-themes/tree/Frosted-Glass)
-[![Graphite-Mono](https://placehold.co/130x30/a6a6a6/262626?text=Graphite-Mono&font=Oswald)](https://github.com/HyDE-Project/hyde-themes/tree/Graphite-Mono)
-[![Gruvbox-Retro](https://placehold.co/130x30/475437/B5CC97?text=Gruvbox-Retro&font=Oswald)](https://github.com/HyDE-Project/hyde-themes/tree/Gruvbox-Retro)
-[![Material-Sakura](https://placehold.co/130x30/f2e9e1/b4637a?text=Material-Sakura&font=Oswald)](https://github.com/HyDE-Project/hyde-themes/tree/Material-Sakura)
-[![Nordic-Blue](https://placehold.co/130x30/D9D9D9/476A84?text=Nordic-Blue&font=Oswald)](https://github.com/HyDE-Project/hyde-themes/tree/Nordic-Blue)
-[![Rosé-Pine](https://placehold.co/130x30/c4a7e7/191724?text=Rosé-Pine&font=Oswald)](https://github.com/HyDE-Project/hyde-themes/tree/Rose-Pine)
-[![Synth-Wave](https://placehold.co/130x30/495495/ff7edb?text=Synth-Wave&font=Oswald)](https://github.com/HyDE-Project/hyde-themes/tree/Synth-Wave)
-[![Tokyo-Night](https://placehold.co/130x30/7aa2f7/24283b?text=Tokyo-Night&font=Oswald)](https://github.com/HyDE-Project/hyde-themes/tree/Tokyo-Night)
+[![Catppuccin-Latte](https://placehold.co/130x30/dd7878/eff1f5?text=Catppuccin-Latte&font=Oswald)](https://github.com/M4rshe1/hyde-themes-themes/tree/Catppuccin-Latte)
+[![Catppuccin-Mocha](https://placehold.co/130x30/b4befe/11111b?text=Catppuccin-Mocha&font=Oswald)](https://github.com/M4rshe1/hyde-themes-themes/tree/Catppuccin-Mocha)
+[![Decay-Green](https://placehold.co/130x30/90ceaa/151720?text=Decay-Green&font=Oswald)](https://github.com/M4rshe1/hyde-themes-themes/tree/Decay-Green)
+[![Edge-Runner](https://placehold.co/130x30/fada16/000000?text=Edge-Runner&font=Oswald)](https://github.com/M4rshe1/hyde-themes-themes/tree/Edge-Runner)
+[![Frosted-Glass](https://placehold.co/130x30/7ed6ff/1e4c84?text=Frosted-Glass&font=Oswald)](https://github.com/M4rshe1/hyde-themes-themes/tree/Frosted-Glass)
+[![Graphite-Mono](https://placehold.co/130x30/a6a6a6/262626?text=Graphite-Mono&font=Oswald)](https://github.com/M4rshe1/hyde-themes-themes/tree/Graphite-Mono)
+[![Gruvbox-Retro](https://placehold.co/130x30/475437/B5CC97?text=Gruvbox-Retro&font=Oswald)](https://github.com/M4rshe1/hyde-themes-themes/tree/Gruvbox-Retro)
+[![Material-Sakura](https://placehold.co/130x30/f2e9e1/b4637a?text=Material-Sakura&font=Oswald)](https://github.com/M4rshe1/hyde-themes-themes/tree/Material-Sakura)
+[![Nordic-Blue](https://placehold.co/130x30/D9D9D9/476A84?text=Nordic-Blue&font=Oswald)](https://github.com/M4rshe1/hyde-themes-themes/tree/Nordic-Blue)
+[![Rosé-Pine](https://placehold.co/130x30/c4a7e7/191724?text=Rosé-Pine&font=Oswald)](https://github.com/M4rshe1/hyde-themes-themes/tree/Rose-Pine)
+[![Synth-Wave](https://placehold.co/130x30/495495/ff7edb?text=Synth-Wave&font=Oswald)](https://github.com/M4rshe1/hyde-themes-themes/tree/Synth-Wave)
+[![Tokyo-Night](https://placehold.co/130x30/7aa2f7/24283b?text=Tokyo-Night&font=Oswald)](https://github.com/M4rshe1/hyde-themes-themes/tree/Tokyo-Night)
 
   </td></tr></table>
 </div>
@@ -291,7 +291,7 @@ For more information, visit [HyDE-Project/hyde-themes](https://github.com/HyDE-P
 <a id="star_history"></a>
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=STARS" width="450"/>
                         
-[![Stargazers over time](https://starchart.cc/HyDE-Project/HyDE.svg?background=%231f2226&axis=%23ebbcba&line=%23c79bf0)](https://starchart.cc/HyDE-Project/HyDE)
+[![Stargazers over time](https://starchart.cc/M4rshe1/hyde-themes.svg?background=%231f2226&axis=%23ebbcba&line=%23c79bf0)](https://starchart.cc/M4rshe1/hyde-themes)
 
                     
 
@@ -327,8 +327,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://rubiin.is-a.dev"><img src="https://avatars.githubusercontent.com/u/8222059?v=4?s=100" width="100px;" alt="Rubin Bhandari"/><br /><sub><b>Rubin Bhandari</b></sub></a><br /><a href="https://github.com/HyDE-Project/HyDE/commits?author=rubiin" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kRHYME7"><img src="https://avatars.githubusercontent.com/u/53417443?v=4?s=100" width="100px;" alt="Khing"/><br /><sub><b>Khing</b></sub></a><br /><a href="https://github.com/HyDE-Project/HyDE/commits?author=kRHYME7" title="Code">💻</a> <a href="https://github.com/HyDE-Project/HyDE/commits?author=kRHYME7" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://rubiin.is-a.dev"><img src="https://avatars.githubusercontent.com/u/8222059?v=4?s=100" width="100px;" alt="Rubin Bhandari"/><br /><sub><b>Rubin Bhandari</b></sub></a><br /><a href="https://github.com/M4rshe1/hyde-themes/commits?author=rubiin" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kRHYME7"><img src="https://avatars.githubusercontent.com/u/53417443?v=4?s=100" width="100px;" alt="Khing"/><br /><sub><b>Khing</b></sub></a><br /><a href="https://github.com/M4rshe1/hyde-themes/commits?author=kRHYME7" title="Code">💻</a> <a href="https://github.com/M4rshe1/hyde-themes/commits?author=kRHYME7" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>

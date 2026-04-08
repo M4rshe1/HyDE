@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Add user configurations here
 # For HyDE to not touch your beloved configurations,
 # we added a config file for you to customize HyDE before loading zshrc
@@ -10,12 +17,13 @@
 # Override aliases here in '$ZDOTDIR/.zshrc' (already set in .zshenv)
 
 # # Helpful aliases
-# alias c='clear'                                                        # clear terminal
-# alias l='eza -lh --icons=auto'                                         # long list
-# alias ls='eza -1 --icons=auto'                                         # short list
-# alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
-# alias ld='eza -lhD --icons=auto'                                       # long list dirs
-# alias lt='eza --icons=auto --tree'                                     # list folder as tree
+alias c='clear'                                                        # clear terminal
+alias cls='clear'                                                        # clear terminal
+alias l='eza -lh --icons=auto'                                         # long list
+alias ls='eza -1 --icons=auto'                                         # short list
+alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
+alias ld='eza -lhD --icons=auto'                                       # long list dirs
+alias lt='eza --icons=auto --tree'                                     # list folder as tree
 # alias un='$aurhelper -Rns'                                             # uninstall package
 # alias up='$aurhelper -Syu'                                             # update system/package/aur
 # alias pl='$aurhelper -Qs'                                              # list installed package
@@ -26,18 +34,48 @@
 # alias fastfetch='fastfetch --logo-type kitty'
 
 # # Directory navigation shortcuts
-# alias ..='cd ..'
-# alias ...='cd ../..'
-# alias .3='cd ../../..'
-# alias .4='cd ../../../..'
-# alias .5='cd ../../../../..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+alias rmpkg="sudo pacman -Rsn"
+alias cleanch="sudo pacman -Scc"
+alias fixpacman="sudo rm /var/lib/pacman/db.lck"
+alias update="paru -Syu"
+
+alias cleanup="sudo pacman -Rsn $(pacman -Qtdq)"
+
+alias jctl="journalctl -p 3 -xb"
+
+alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+
+alias prj='cd ~/projects'
+
+function lg() {
+    git add .
+    git commit -m "$1"
+    git push
+}
+
+function gor() {
+  git remote remove origin
+  git remove add origin "$1"
+}
+
 
 # # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
-# alias mkdir='mkdir -p'
+alias mkdir='mkdir -p'
 
 #  This is your file 
 # Add your configurations here
 # export EDITOR=nvim
 export EDITOR=code
 
+alias cursor='~/.local/share/AppImage/Cursor.AppImage'
+
 # unset -f command_not_found_handler # Uncomment to prevent searching for commands not found in package manager
+
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

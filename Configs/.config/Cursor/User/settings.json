@@ -1,0 +1,16 @@
+{
+    "window.commandCenter": true,
+    "workbench.colorTheme": "Rosé Pine Moon",
+    "workbench.iconTheme": "catppuccin-frappe",
+    "projectManager.git.baseFolders": [
+        "/home/colin/projects"
+    ],
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
+    "git.enableSmartCommit": true,
+    "git.postCommitCommand": "push",
+    "git.autofetch": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always"
+}

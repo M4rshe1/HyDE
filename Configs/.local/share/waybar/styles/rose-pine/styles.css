@@ -1,0 +1,205 @@
+@import "./colors.css";
+
+/* --- Global-Settings ---*/
+* {
+    font-family: 'JetBrainsMono Nerd Font';
+    font-size: 12px;
+    font-weight: bold;
+    min-height: 0px;
+}
+
+/* --- Waybar ---*/
+window#waybar {
+    background-color: transparent;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* --- Group Layout Containers ---*/
+
+#left1,
+#left2,
+#left3,
+#right1,
+#right2,
+#right3,
+#right4,
+#right5 {
+    background-color: @base;
+    border-radius: 8px;
+    border: 2px solid alpha(@text, 0.15);
+}
+
+/* Spacing for groups */
+#left1,
+#left2,
+#left3 {
+    margin-right: 8px;
+}
+
+#right1,
+#right2,
+#right3,
+#right4,
+#right5 {
+    margin-left: 8px;
+}
+
+/* Left Groups specific */
+#left3 {
+    color: @subtle;
+}
+
+/* Right Groups specific */
+#right1 {
+    /* Tray container */
+    padding: 0 4px;
+}
+
+/* --- Center Module --- */
+.modules-center {
+    background-color: transparent;
+    color: @foam;
+}
+
+window#waybar.empty #window {
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar.empty .modules-center {
+    opacity: 0;
+}
+
+/* --- Workspaces --- */
+#workspaces {
+    background-color: @base;
+    border-radius: 8px;
+}
+
+#workspaces button {
+    padding: 0px 8px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: @text;
+    opacity: 1;
+}
+
+#workspaces button.active {
+    color: @love;
+    opacity: 1;
+}
+
+#workspaces button.empty {
+    color: alpha(@text, 0.4);
+    opacity: 0.45;
+    transition: all 0.15s ease-in-out;
+}
+
+#workspaces button.empty.active {
+    color: @love;
+}
+
+/* --- General Modules Padding --- */
+#tray,
+#window,
+#mpris,
+#cpu,
+#clock,
+#network,
+#memory,
+#pulseaudio,
+#custom-hyde-menu,
+#custom-gpuinfo,
+#custom-power {
+    min-width: 16px;
+    margin: 1px 3px 1px 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+/* --- Module Specific Colors --- */
+
+#mpris {
+    color: @iris;
+    /* Removed individual border/bg as it's now in #left4 group */
+    background: transparent;
+    border: none;
+}
+
+#clock {
+    color: @gold;
+}
+
+#custom-gpuinfo {
+    color: @foam;
+    padding-left: 4px;
+    padding-right: 8px;
+}
+
+#cpu {
+    color: @rose;
+    border-right: 1px solid alpha(@text, 0.15);
+    padding-right: 8px;
+    padding-left: 4px;
+}
+
+#memory {
+    color: @gold;
+    border-right: 1px solid alpha(@text, 0.15);
+    border-radius: 0;
+}
+
+#network {
+    color: @rose;
+}
+
+#pulseaudio.output {
+    color: @love;
+    border-right: 1px solid alpha(@text, 0.15);
+    border-radius: 0;
+}
+
+#pulseaudio.input {
+    color: @foam;
+    border-right: 1px solid alpha(@text, 0.15);
+    border-radius: 0;
+}
+
+#tray {
+    color: @muted;
+}
+
+#custom-hyde-menu {
+    color: @iris;
+    padding-right: 4px;
+}
+
+#custom-power {
+    color: @love;
+    padding-left: 4px;
+}
+
+/* --- Tooltip ---*/
+tooltip {
+    padding: 4px;
+    background-color: @base;
+    border: 1px solid alpha(@text, 0.15);
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+tooltip label {
+    color: @subtle;
+    font-weight: normal;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: transparent;
+}
