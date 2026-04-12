@@ -64,13 +64,13 @@
             "pulseaudio#output",
             "pulseaudio#input",
             "network",
+            "custom/dunst",
         ]
     },
     "group/right3": {
         "orientation": "inherit",
         "modules": [
             "clock",
-            "custom/swaync",
         ]
     },
     "group/right4": {
