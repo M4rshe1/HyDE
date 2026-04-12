@@ -116,6 +116,7 @@ window#waybar.empty #window {
 #pulseaudio,
 #custom-hyde-menu,
 #custom-gpuinfo,
+#custom-dunst,
 #custom-power {
     min-width: 16px;
     margin: 1px 3px 1px 3px;
@@ -157,6 +158,8 @@ window#waybar.empty #window {
 
 #network {
     color: @rose;
+    border-right: 1px solid alpha(@text, 0.15);
+    border-radius: 0;
 }
 
 #pulseaudio.output {
@@ -175,9 +178,13 @@ window#waybar.empty #window {
     color: @muted;
 }
 
+#custom-dunst {
+    color: @love;
+    padding-right: 4px;
+}
+
 #custom-hyde-menu {
     color: @iris;
-    padding-right: 4px;
 }
 
 #custom-power {
