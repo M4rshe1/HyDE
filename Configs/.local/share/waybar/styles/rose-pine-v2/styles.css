@@ -1,0 +1,232 @@
+@import './colors.css';
+
+* {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-size: 12px;
+  font-weight: 700;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: transparent;
+}
+
+#waybar > box {
+  margin: -2px 0 0 0;
+  padding: 0;
+  min-height: 32px;
+  border-radius: 0 0 8px 8px;
+  background-color: @base;
+  box-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.4),
+    0px 1px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid alpha(@text, 0.15);
+}
+
+window#waybar.empty .modules-center {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  opacity: 0;
+}
+
+.modules-center {
+  margin: 0;
+  padding: 0;
+  color: @foam;
+}
+
+.modules-left,
+.modules-right {
+  border-radius: 2px;
+  padding: 0 4px;
+}
+
+button {
+  box-shadow: inset 0 -3px transparent;
+  border: none;
+  border-radius: 0;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background: inherit;
+}
+
+#workspaces {
+  border-radius: 2px;
+  padding: 0;
+  margin: 0;
+}
+
+#workspaces button {
+  padding: 0 6px;
+  padding-top: 2px;
+  color: @text;
+  opacity: 0.75;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+}
+
+#workspaces button.active {
+  opacity: 1;
+  color: @love;
+  border-bottom: 1px solid @love;
+  border-radius: 1px;
+  background: transparent;
+  transition: 0.1s;
+  margin-bottom: 1px;
+}
+
+#workspaces button.empty {
+  color: alpha(@text, 0.3);
+  opacity: 0.5;
+}
+
+#workspaces button.empty.active {
+  color: @love;
+  opacity: 1;
+}
+
+.label {
+  color: @text;
+}
+
+#workspaces button:hover {
+  opacity: 1;
+  color: @love;
+  border-bottom: 1px solid @love;
+  background: transparent;
+  transition: 0.1s;
+  margin-bottom: 1px;
+}
+
+#tray,
+#window,
+#mpris,
+#memory,
+#cpu,
+#custom-cpuinfo,
+#temperature,
+#clock,
+#network,
+#pulseaudio,
+#custom-hyde-menu,
+#custom-gpuinfo,
+#custom-gpuinfo.load,
+#custom-gpuinfo.vram,
+#custom-gpuinfo.temp,
+#custom-dunst,
+#custom-swaync,
+#custom-power {
+  min-width: 12px;
+  color: @text;
+  opacity: 1;
+  padding: 0 6px;
+  margin: 0 2px;
+}
+
+#window {
+  color: @foam;
+}
+
+#mpris {
+  color: @iris;
+  background-color: transparent;
+}
+
+#mpris.playing {
+  border-bottom: 1px solid @iris;
+}
+
+#memory {
+  color: @gold;
+}
+
+#cpu,
+#custom-cpuinfo,
+#temperature {
+  color: @rose;
+}
+
+#custom-gpuinfo,
+#custom-gpuinfo.load,
+#custom-gpuinfo.vram,
+#custom-gpuinfo.temp {
+  color: @foam;
+}
+
+#clock {
+  color: @gold;
+}
+
+#network {
+  color: @foam;
+}
+
+#network.disconnected {
+  color: @love;
+}
+
+#pulseaudio {
+  color: @love;
+}
+
+#pulseaudio.microphone {
+  color: @love;
+}
+
+#tray {
+  color: @muted;
+  margin-top: 1px;
+}
+
+#custom-dunst,
+#custom-swaync {
+  color: @iris;
+}
+
+#custom-hyde-menu {
+  color: @iris;
+}
+
+#custom-power {
+  color: @love;
+  font-size: 14px;
+  padding: 0 4px 0 0;
+  margin: 0 4px;
+}
+
+#custom-divider {
+  color: transparent;
+  background-color: alpha(@muted, 0.55);
+  border-radius: 1px;
+  min-width: 1px;
+  min-height: 0;
+  padding: 0;
+  margin: 10px 6px;
+  opacity: 1;
+  font-size: 1px;
+}
+
+tooltip {
+  padding: 4px;
+  background: @base;
+  font-size: 10px;
+  border: 1px solid alpha(@text, 0.15);
+  border-radius: 6px;
+}
+
+tooltip label {
+  color: @subtle;
+  font-weight: normal;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: transparent;
+}
